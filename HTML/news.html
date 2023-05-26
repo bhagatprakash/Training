@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>news</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: sans-serif;
+      min-height: 100%;
+      max-width: 100%;
+      line-height: 1.4;
+      padding: 20px 40px;
+    }
+    .container {
+      max-width: 1200px;
+    }
+    .heading-1 {
+      font-size: 40px;
+    }
+
+    .heading-3 {
+      font-size: 20px;
+      text-transform: uppercase;
+      color: #c51212;
+      margin-bottom: 10px;
+    }
+
+    .sub-heading {
+      font-size: 20px;
+      display: flex;
+      margin-bottom: 30px;
+      border-bottom: 1px solid #d0c7c7;
+      padding-bottom: 10px;
+    }
+    .sub-heading p {
+      font-weight: bold;
+      text-transform: capitalize;
+      margin-right: 10px;
+    }
+    .sub-heading span {
+      color: #555;
+      font-weight: bold;
+      border-right: 1px solid #ccc;
+      padding-right: 10px;
+    }
+    .sub-heading .importent {
+      color: #c51212;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    .home {
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 40px;
+    }
+    .home-img {
+      width: 100%;
+    }
+    /* .right {
+      transition: 1s;
+    }
+    .right .list {
+      color: rgb(53, 53, 196);
+      cursor: pointer;
+      transform: scale(1.1);
+    } */
+    .list {
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+    .list img {
+      width: 100px;
+      height: 80px;
+    }
+
+    /* Artical  */
+    @media (max-width: 950px) {
+      .home {
+        grid-template-columns: auto;
+      }
+      .list {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 20px;
+      }
+    }
+
+    .article p {
+      font-size: 20px;
+      margin-bottom: 20px;
+      columns: 3 25ch;
+      column-gap: 40px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <header>
+        <h1 class="heading-1">THE TIMES OF INDIA</h1>
+        <div class="sub-heading">
+          <p>Sunday<span> june 26, 2023</span></p>
+          <p class="importent">your right to know</p>
+        </div>
+      </header>
+
+      <div class="main">
+        <div class="home">
+          <div class="left">
+            <img
+              src="./HTML/images/newspaper img.png"
+              class="home-img"
+              alt="picture"
+            />
+
+            <h2 class="heading-2">
+              A.P.J Abdul Kalam was the 11th President of India. His work with
+              the Defence Research and Development Organisation in developing
+              military
+            </h2>
+          </div>
+
+          <div class="right">
+            <h3 class="heading-3">Latest news</h3>
+
+            <div class="list">
+              <img src="./HTML/images/a.p.j kalam.webp" alt="picture-1" />
+              <p>
+                He started his career by designing a small hovercraft, but
+                remained unconvinced by his choice of a job at DRDO.
+              </p>
+            </div>
+
+            <div class="list">
+              <img src="./HTML/images/Goldenbride.jpg" alt="picture-2" />
+              <p>
+                He started his career by designing a small hovercraft, but
+                remained unconvinced by his choice of a job at DRDO.
+              </p>
+            </div>
+
+            <div class="list">
+              <img src="./HTML/images/newspaper img.png" alt="picture-3" />
+              <p>
+                He started his career by designing a small hovercraft, but
+                remained unconvinced by his choice of a job at DRDO.
+              </p>
+            </div>
+
+            <div class="list">
+              <img
+                src="./HTML/images/macarons-2548818_1920.jpg"
+                alt="picture-4"
+              />
+              <p>
+                He started his career by designing a small hovercraft, but
+                remained unconvinced by his choice of a job at DRDO.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <article>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+            laboriosam quisquam quidem autem qui nihil rerum, porro iure illum
+            minus, assumenda ullam corrupti quibusdam architecto commodi, soluta
+            unde ducimus suscipit. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Quam magni qui id odio optio officiis unde et
+            blanditiis rem animi ducimus, eaque atque est facere quod enim hic
+            quis voluptate? Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Obcaecati illum autem enim numquam rem eveniet, blanditiis
+            aliquam nemo repudiandae deserunt quidem voluptate atque sequi
+            reprehenderit incidunt error iste vitae voluptates. Lorem ipsum
+            dolor, sit amet consectetur adipisicing elit. Temporibus rem in
+            autem tempora facere quis quae amet alias perferendis laborum
+            nostrum, libero aspernatur pariatur blanditiis nam explicabo cum
+            enim commodi?
+          </p>
+        </article>
+      </div>
+    </div>
+  </body>
+</html>
